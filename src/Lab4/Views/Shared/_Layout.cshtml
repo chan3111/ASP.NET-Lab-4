@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="~/css/StyleSheet.css" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <h3>Movies Database</h3>
+        <br />
+        @Html.ActionLink("Home", "Index", "Home") &nbsp;
+        @Html.ActionLink("Add Movie", "AddMovie", "Home") &nbsp;
+    </header>
+    <div class="content">
+        @RenderBody()
+    </div>
+    <footer>
+        © 2016 - Chandler Newman-Reed
+    </footer>
+</body>
+</html>
